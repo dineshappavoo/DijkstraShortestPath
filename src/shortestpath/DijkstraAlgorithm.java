@@ -25,14 +25,10 @@ public class DijkstraAlgorithm {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		DijkstraAlgorithm dijkstra=new DijkstraAlgorithm();
-		dijkstra.constructGraph();
-		dijkstra.findDijkstraShortestPath();
 		
-		for(int i=1;i<=noOfVertices;i++)
-		{
-			System.out.println("Distance for "+i+" is "+d[i] );
-		}
+		DijkstraAlgorithm dijkstraAlgorithm = new DijkstraAlgorithm();
+		dijkstraAlgorithm.findShortestPath();
+
 	}
 	
 	public void constructGraph()
@@ -133,6 +129,17 @@ public class DijkstraAlgorithm {
 				doRelax((Integer)e.u, (Integer)e.v, (Integer)e.w);
 			}
 			
+		}
+	}
+	
+	public void findShortestPath()
+	{
+		constructGraph();
+		findDijkstraShortestPath();
+		
+		for(int i=1;i<=noOfVertices;i++)
+		{
+			System.out.println("Distance for "+i+" is "+d[i] );
 		}
 	}
 	
