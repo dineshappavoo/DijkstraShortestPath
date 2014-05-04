@@ -1,4 +1,4 @@
-Bellman - Ford Shortest Path 
+Dijkstra's Shortest Path 
 =======================
 
 Dijkstra's Shortest Path algorithm implementation in java.
