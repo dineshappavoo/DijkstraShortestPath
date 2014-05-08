@@ -132,6 +132,10 @@ public class DijkstraAlgorithm {
 		}
 	}
 	
+	/**
+	 * To construct the graph and find the shortest path
+	 * 
+	 */
 	public void findShortestPath()
 	{
 		constructGraph();
